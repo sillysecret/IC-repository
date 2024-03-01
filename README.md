@@ -1,4 +1,4 @@
-# Entendendo como atacar e defender-se de sql-injetions e xss
+# Entendendo como atacar e defender-se,SQL-injections e XSS
 
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
