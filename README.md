@@ -9,7 +9,6 @@
 
 <img src="https://i.pinimg.com/236x/71/01/32/710132864d55b26c57f4a059cf1976f9.jpg">
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
 
 ### Ajustes e melhorias
 
