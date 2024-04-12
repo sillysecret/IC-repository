@@ -1,0 +1,19 @@
+version: "3.5"
+
+services:
+  postgres:
+    container_name: desafiopicpay_postgres
+    image: postgres:15
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_USER: pic
+      POSTGRES_PASSWORD: pay
+      POSTGRES_DB: picpay
+    ports:
+      - "5432:5432"
+    deploy:
+      resources:
+        limits:
+          cpus: "1.3"
+          memory: "1.5GB"

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Login</title>
+</head>
+<body>
+
+<h2>Formulário de Login</h2>
+
+<form id="loginForm">
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+  <label for="senha">Senha:</label><br>
+  <input type="password" id="senha" name="senha" required><br><br>
+  <button type="button" onclick="enviarDados()">Entrar</button>
+</form>
+
+<div id="resultado"></div>
+
+<script>
+async function enviarDados() {
+  var email = document.getElementById("email").value;
+  var senha = document.getElementById("senha").value;
+
+  const dados = {
+    email: email,
+    password: senha
+  };
+
+  console.log(JSON.stringify(dados));
+
+  const response = await fetch("http://localhost:3000/loginPessoa", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json",
+      },
+    body: JSON.stringify(dados)
+  });
+  console.log(response);
+  const data = await response.json();
+  console.log(data);
+
+
+
+}
+</script>
+
+</body>
+</html>

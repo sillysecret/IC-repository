@@ -1,0 +1,18 @@
+# Arquivo .gitignore para projetos Rust
+
+# Arquivos e diretórios locais
+/target/
+**/*.rs.bk
+
+# Arquivos executáveis
+*.exe
+*.exe.*
+*.dll
+*.so
+*.dylib
+
+# Arquivos de documentos gerados
+Cargo.lock
+
+# Arquivos de ambiente
+.env
